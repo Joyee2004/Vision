@@ -119,7 +119,7 @@ choice = st.sidebar.selectbox("Menu", menu)
 if choice == "Home":
     st.write('Vision - an attempt to ease the lives of visually impaired people')
 elif choice == "Upload Image":
-    st.write('Upload an image to generate a caption.')
+    st.write('Upload an image')
     uploaded_file = st.file_uploader("Choose an image...", type="jpg")
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
@@ -137,7 +137,7 @@ elif choice == "Upload Image":
         """
         st.markdown(audio_html, unsafe_allow_html=True)
 elif choice == "Take Photo":
-    st.write('Take a photo to generate a caption.')
+    st.write('Take a photo ')
     camera_image = st.camera_input("Take a photo")
     if camera_image is not None:
         image = Image.open(camera_image)
