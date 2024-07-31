@@ -9,7 +9,7 @@ from res import enderes
 from Flickr import FlickrDataset
 
 data_location = "./archive"
-model_path = 'attention_model_state.pth'  # Update with the path to your model
+model_path = 'attention_model_state.pth'  
 
 
 dataset = FlickrDataset(
