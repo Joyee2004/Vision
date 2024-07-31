@@ -3,7 +3,7 @@ import torch.nn as nn
 from Attention import Attention
 
 class DecoderRNN(nn.Module):
-    def __init__(self, embed_size, vocab_size, attention_dim, encoder_dim, decoder_dim, drop_prob=0.3):
+    def __init__(self, embed_size, vocab_size, attention_dim, encoder_dim = 1536, decoder_dim= 512, drop_prob=0.3):
         super(DecoderRNN, self).__init__()
 
         # Save the model parameters
